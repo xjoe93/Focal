@@ -1,0 +1,1640 @@
+/* ==================================== Global Style ==================================== */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+:root {
+    --navbar-color: #252e30;
+    --main-color: #2ecc71;
+    --sub-head: #566366;
+    --bg-section: #f2f2f1;
+    --p-color: #919191;
+    --contact-Section-Color: #252e30;
+    --Input-Contact-Color: #4b5456;
+    --footer-color: #191f21;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==================================== Global Style ==================================== */
+
+
+
+/* ==================================== Start Header Style ==================================== */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        background: rgb(160, 160, 160);
+        height: 100vh;
+    }
+
+    nav {
+        background-color: var(--navbar-color);
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+    .nav-btn {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .nav-btn .burger-menu span {
+        border: 2px solid var(--main-color);
+        display: block;
+        width: 40px;
+    }
+
+    .nav-btn .burger-menu span:nth-child(2) {
+        margin: 0.3rem 0;
+    }
+
+    #nav-list {
+        position: absolute;
+        top: 42px;
+        right: 0;
+        background-color: var(--navbar-color);
+        list-style: none;
+        text-transform: capitalize;
+    }
+
+    #nav-list li a {
+        color: #fff;
+        display: block;
+        width: 200px;
+        padding: 1rem 3rem 1rem 1rem;
+        border-bottom: 1px solid var(--Input-Contact-Color);
+        border-top: 1px solid var(--Input-Contact-Color);
+        transition: all 0.40s ease-in-out;
+        letter-spacing: 0.3px;
+    }
+
+    #nav-list li a:hover {
+        color: var(--main-color);
+        padding-left: 2rem;
+    }
+
+    header .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 69px);
+        text-align: center;
+    }
+
+    header .hero h1 {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 37px;
+    }
+
+    header .hero .heading {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+    }
+
+    header .hero a {
+        color: #fff;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        transition: all 0.50s ease-in;
+    }
+
+    header .hero a:hover {
+        background-color: #fff;
+        color: var(--p-color);
+    }
+
+    .show {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    header {
+        background: url(./Img/Hero-Bg.png) center/cover no-repeat;
+        height: 100vh;
+    }
+
+    nav {
+        background-color: var(--navbar-color);
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+    .nav-btn {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .nav-btn .burger-menu span {
+        border: 2px solid var(--main-color);
+        display: block;
+        width: 40px;
+    }
+
+    .nav-btn .burger-menu span:nth-child(2) {
+        margin: 0.3rem 0;
+    }
+
+    #nav-list {
+        position: absolute;
+        top: 42px;
+        right: 0;
+        background-color: var(--navbar-color);
+        list-style: none;
+        text-transform: capitalize;
+    }
+
+    #nav-list li a {
+        color: #fff;
+        display: block;
+        width: 200px;
+        padding: 1rem 3rem 1rem 1rem;
+        border-bottom: 1px solid var(--Input-Contact-Color);
+        border-top: 1px solid var(--Input-Contact-Color);
+        transition: all 0.40s ease-in-out;
+        letter-spacing: 0.3px;
+    }
+
+    #nav-list li a:hover {
+        color: var(--main-color);
+        padding-left: 2rem;
+    }
+
+    header .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 69px);
+        text-align: center;
+    }
+
+    header .hero h1 {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 37px;
+    }
+
+    header .hero .heading {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+    }
+
+    header .hero a {
+        color: #fff;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        transition: all 0.50s ease-in;
+    }
+
+    header .hero a:hover {
+        background-color: #fff;
+        color: var(--p-color);
+    }
+
+    .show {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    header {
+        background: url(./Img/Hero-Bg.png) center/cover no-repeat;
+        height: 100vh;
+    }
+
+    nav {
+        background-color: var(--navbar-color);
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .show {
+        list-style: none;
+    }
+
+    .show li {
+        display: inline-block;
+    }
+
+    .show li a {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 0.5rem;
+    }
+
+    .show li a:hover {
+        color: var(--main-color);
+    }
+
+    header .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 69px);
+        text-align: center;
+    }
+
+    header .hero h1 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 50px;
+    }
+
+    header .hero .heading {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+    }
+
+    header .hero a {
+        color: #fff;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        transition: all 0.50s ease-in;
+    }
+
+    header .hero a:hover {
+        background-color: #fff;
+        color: var(--p-color);
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    header {
+        background: url(./Img/Hero-Bg.png) top/cover no-repeat;
+        height: 100vh;
+    }
+
+    nav {
+        background-color: var(--navbar-color);
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .show {
+        list-style: none;
+    }
+
+    .show li {
+        display: inline-block;
+    }
+
+    .show li a {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 1.2rem;
+        font-size: 1rem;
+    }
+
+    .show li a:hover {
+        color: var(--main-color);
+    }
+
+    header .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 69px);
+        text-align: center;
+    }
+
+    header .hero h1 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 65px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        width: 60%;
+    }
+
+    header .hero .heading {
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .hero a {
+        color: #fff;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        transition: all 0.50s ease-in;
+    }
+
+    header .hero a:hover {
+        background-color: #fff;
+        color: var(--p-color);
+    }
+
+}
+
+/* ==================================== End Header Style ==================================== */
+
+
+
+/* ==================================== Start About-Me Style ==================================== */
+
+@media screen and (max-width: 768px) {
+
+    .about-me {
+        background-color: var(--bg-section);
+    }
+
+    .about-me .container * {
+        text-align: center;
+        margin: 0.8rem 0;
+        text-transform: capitalize;
+        line-height: 1.5;
+    }
+
+    .about-left img {
+        width: 100%;
+    }
+
+    .about-me .container h3 {
+        color: var(--sub-head);
+    }
+
+    .about-me .container p {
+        color: var(--p-color);
+    }
+
+    .about-me .container span {
+        background-color: var(--main-color);
+        padding: 1.1rem 1.25rem;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    .about-me {
+        background-color: var(--bg-section);
+    }
+
+    .about-me .container * {
+        text-align: center;
+        margin: 0.8rem 0;
+        text-transform: capitalize;
+        line-height: 1.5;
+    }
+
+    .about-left img {
+        width: 80%;
+    }
+
+    .about-me .container h3 {
+        color: var(--sub-head);
+    }
+
+    .about-me .container p {
+        color: var(--p-color);
+    }
+
+    .about-me .container span {
+        background-color: var(--main-color);
+        padding: 1.1rem 1.25rem;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .about-me {
+        background-color: var(--bg-section);
+    }
+
+    .about-me .container {
+        text-transform: capitalize;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        gap: 50px;
+        width: 100%;
+        background-color: var(--bg-section);
+    }
+
+    .about-left img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-right {
+        align-self: center;
+    }
+
+    .about-right-text h2 {
+        color: var(--sub-head);
+    }
+
+    .about-right-text p {
+        margin: 0.8rem 0;
+        line-height: 1.5;
+        color: var(--p-color);
+    }
+
+    .about-right-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .feature-child {
+        display: flex;
+        margin: 0.8rem 0;
+    }
+
+    .feature-child span {
+        margin-top: 2px;
+        margin-right: 20px;
+        color: var(--main-color);
+        font-size: 1.9rem;
+    }
+
+    .feature-child p {
+        line-height: 1.5;
+        color: var(--p-color);
+    }
+
+    .feature-child h3 {
+        color: var(--sub-head);
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .about-me {
+        background-color: var(--bg-section);
+    }
+
+    .about-me .container {
+        text-transform: capitalize;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .about-left img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .about-right {
+        align-self: center;
+        width: 93%;
+    }
+
+    .about-right-text {
+        margin: 2rem 0;
+    }
+
+    .about-right-text h2 {
+        color: var(--sub-head);
+        font-size: 35px;
+    }
+
+    .about-right-text p {
+        margin: 1rem 0;
+        line-height: 1.6;
+        color: var(--p-color);
+        font-size: 1.2rem;
+    }
+
+    .about-right-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .feature-child {
+        display: flex;
+        margin: 0.8rem 0;
+    }
+
+    .feature-child span {
+        margin-top: 2px;
+        margin-right: 25px;
+        color: var(--main-color);
+        font-size: 2.35rem;
+    }
+
+    .feature-child p {
+        line-height: 1.4;
+        color: var(--p-color);
+        font-size: 1.2rem;
+    }
+
+    .feature-child h3 {
+        color: var(--sub-head);
+        margin-bottom: 0.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* ==================================== End About-Me Style ==================================== */
+
+
+
+/* ==================================== Start some-features Style ==================================== */
+
+@media screen and (max-width: 768px) {
+    .some-features .container {
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .sfeatures-child h2 {
+        color: var(--sub-head);
+        text-transform: uppercase;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .sfeatures-child p {
+        color: var(--p-color);
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .some-features .container {
+        text-transform: capitalize;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .sfeatures-child h2 {
+        color: var(--sub-head);
+        text-transform: uppercase;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .sfeatures-child p {
+        color: var(--p-color);
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+    .some-features .container {
+        text-transform: capitalize;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 5rem 0;
+    }
+
+    .sfeatures-child h2 {
+        color: var(--sub-head);
+        text-transform: uppercase;
+        margin: 2rem 0 1rem 0;
+        font-size: 29px;
+    }
+
+    .sfeatures-child p {
+        color: var(--p-color);
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+}
+
+/* ==================================== End some-features Style ==================================== */
+
+
+
+/* ==================================== Start skill Style ==================================== */
+
+@media screen and (max-width: 768px) {
+    .skill {
+        background-color: var(--bg-section);
+        text-align: center;
+        padding: 1rem 0;
+        text-transform: capitalize;
+    }
+    .skill .container * {
+        margin: 1rem 0;
+    }
+
+    .skill .container h1 {
+        color: var(--sub-head);
+    }
+
+    .skill .container p {
+        color: var(--p-color);
+        line-height: 1.5;
+    }
+
+    .left-skill {
+        padding-bottom: 1rem;
+    }
+
+    .left-skill a {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        border: 1px solid var(--main-color);
+        padding: 0.8rem 2rem;
+        display: inline-block;
+        transition: all 0.30s ease-in-out;
+    }
+
+    .left-skill a:hover {
+        background-color: #fff;
+    }
+
+    .right-skill {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .right-skill-static {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-skill-static > div {
+        background-color: var(--main-color);
+        width: 100px;
+        height: 100px;
+        align-self: center;
+        border-radius: 50%;
+        line-height: 100px;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .skill {
+        background-color: var(--bg-section);
+        text-align: center;
+        padding: 1rem 0;
+        text-transform: capitalize;
+    }
+    .skill .container * {
+        margin: 1rem 0;
+    }
+
+    .skill .container h1 {
+        color: var(--sub-head);
+    }
+
+    .skill .container p {
+        color: var(--p-color);
+        line-height: 1.5;
+    }
+
+    .left-skill {
+        padding-bottom: 1rem;
+    }
+
+    .left-skill a {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        border: 1px solid var(--main-color);
+        padding: 0.8rem 2rem;
+        display: inline-block;
+        transition: all 0.30s ease-in-out;
+    }
+
+    .left-skill a:hover {
+        background-color: #fff;
+    }
+
+    .right-skill {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .right-skill-static {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-skill-static > div {
+        background-color: var(--main-color);
+        width: 100px;
+        height: 100px;
+        align-self: center;
+        border-radius: 50%;
+        line-height: 100px;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 993px) {
+    .skill {
+        background-color: var(--bg-section);
+        padding: 5rem 0;
+        text-transform: capitalize;
+    }
+    .skill .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .skill .container * {
+        margin: 1rem 0;
+    }
+
+    .skill .container h1 {
+        color: var(--sub-head);
+    }
+
+    .skill .container p {
+        color: var(--p-color);
+        line-height: 1.5;
+    }
+
+    .left-skill {
+        padding-bottom: 1rem;
+    }
+
+    .left-skill h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .left-skill p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .left-skill a {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        border: 1px solid var(--main-color);
+        padding: 0.8rem 2rem;
+        display: inline-block;
+        transition: all 0.30s ease-in-out;
+    }
+
+    .left-skill a:hover {
+        background-color: #fff;
+    }
+
+    .right-skill {
+        width: 80%;
+    }
+
+
+    .right-skill-box .right-skill-static {
+        background-color: #fff;
+        padding: 14px 0;
+        position: relative;
+    }
+
+    .right-skill-box .right-skill-static > div {
+        background-color: var(--main-color);
+        position: absolute;
+        left: 0;
+        top: -15px;
+        font-size: 1.4rem;
+        text-align: right;
+        color: #fff;
+        padding-right: 10px;
+    }
+
+    .photoshop div div {
+        width: 90%;
+    }
+
+    .illustrator div div {
+        width: 80%;
+    }
+
+    .html-css div div {
+        width: 90%;
+    }
+
+    .php-mysql div div {
+        width: 70%;
+    }
+
+}
+
+/* ==================================== End skill Style ==================================== */
+
+
+
+/* ==================================== Start Resume Style ==================================== */
+
+@media screen and (max-width: 992px) {
+    .resume {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .resume .container h1 {
+        color: var(--sub-head);
+        text-transform: uppercase;
+    }
+
+    .resume .container p {
+        text-transform: capitalize;
+        line-height: 1.5;
+        margin: 1rem 0 2rem 0;
+        color: var(--p-color);
+    }
+
+    .resume .container a {
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        text-transform: uppercase;
+        padding: 0.8rem 2rem;
+        transition: all 0.50s ease-in-out;
+    }
+
+    .resume .container a:hover {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .resume {
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .resume .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume .container h1 {
+        color: var(--sub-head);
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    .resume .container p {
+        text-transform: capitalize;
+        line-height: 1.5;
+        margin: 1rem 0 2.5rem 0;
+        color: var(--p-color);
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .resume .container a {
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        text-transform: uppercase;
+        padding: 0.8rem 2rem;
+        transition: all 0.50s ease-in-out;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .resume .container a:hover {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+}
+/* ==================================== End Resume Style ==================================== */
+
+
+
+/* ==================================== Start Education Style ==================================== */
+@media screen and (max-width: 768px) {
+    .education {
+        background-color: var(--bg-section);
+        padding: 3rem 0;
+    }
+
+    .education .container * {
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .education .container h2 {
+        color: var(--sub-head);
+    }
+
+    .education .container p {
+        color: var(--p-color);
+        line-height: 1.4;
+    }
+
+    .gpa {
+        background-color: var(--main-color);
+        padding: 0.4rem 0.6rem;
+        color: #fff;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .education .container div {
+        margin: 3rem 0;
+    }
+
+    .education .container > hr {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .education {
+        background-color: var(--bg-section);
+        padding: 3rem 0;
+    }
+
+    .education .container * {
+        margin: 1rem 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .education .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .education .container h2 {
+        color: var(--sub-head);
+    }
+
+    .education .container p {
+        color: var(--p-color);
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+
+    .gpa {
+        background-color: var(--main-color);
+        padding: 0.4rem 0.6rem;
+        color: #fff;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .education .container div {
+        margin: 3rem 0;
+    }
+
+    .education .container > hr {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .education {
+        background-color: var(--bg-section);
+        padding: 3rem 0;
+    }
+
+    .education .container {
+        text-transform: capitalize;
+    }
+
+    .education .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .education .container h2 {
+        color: var(--sub-head);
+    }
+
+    .education .container p {
+        color: var(--p-color);
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+
+    .gpa {
+        background-color: var(--main-color);
+        padding: 0.4rem 0.6rem;
+        color: #fff;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .education-child-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 3rem 0;
+        height: 1000px;
+    }
+
+    .education-child-grid .eduaction-left p {
+        margin: 1rem 0;
+        line-height: 2;
+    }
+
+    .education-right-1 {
+        margin-bottom: 3rem;
+    }
+
+    .education-right-1 * {
+        margin-bottom: 1rem;
+    }
+
+    .education-right-2 * {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+    .education {
+        background-color: var(--bg-section);
+        padding: 3rem 0;
+    }
+
+    .education .container {
+        text-transform: capitalize;
+    }
+
+    .education .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .education .container h2 {
+        color: var(--sub-head);
+    }
+
+    .education .container p {
+        color: var(--p-color);
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+
+    .gpa {
+        background-color: var(--main-color);
+        padding: 0.4rem 0.6rem;
+        color: #fff;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .education-child-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 3rem 0;
+        height: 850px;
+    }
+
+    .education-child-grid .eduaction-left p {
+        margin: 1rem 0;
+        line-height: 2;
+        width: 80%;
+    }
+
+    .education-right-1 {
+        margin-bottom: 3rem;
+    }
+
+    .education-right-1 * {
+        margin-bottom: 1rem;
+    }
+
+    .education-right-2 * {
+        margin-bottom: 1rem;
+    }
+
+    .experience-child {
+        padding-top: 3rem;
+    }
+
+    .education .container .education-child h1  {
+        font-size: 2.3rem;
+    }
+
+    .education .container .experience-child h1  {
+        font-size: 2.3rem;
+    }
+
+}
+/* ==================================== End Education Style ==================================== */
+
+
+
+/* ==================================== Start Quote Style ==================================== */
+.quote {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.quote .container q {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--p-color);
+}
+
+.quote .container h2 {
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 1rem 0 0 0;
+    color: var(--sub-head);
+}
+
+@media screen and (min-width: 1200px) {
+    .quote {
+        padding: 4rem 0;
+        text-align: center;
+    }
+    
+    .quote .container q {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        line-height: 1.5;
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        color: var(--p-color);
+    }
+    
+    .quote .container h2 {
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 1rem 0 0 0;
+        color: var(--sub-head);
+    }
+}
+/* ==================================== End Quote Style ==================================== */
+
+
+
+/* ==================================== Start Portfolio Style ==================================== */
+@media screen and (max-width: 768px) {
+    .portfolio {
+        text-align: center;
+        text-transform: capitalize;
+        background-color: var(--bg-section);
+        padding: 2rem 0;
+    }
+    .portfolio h1 {
+        color: var(--sub-head);
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .portfolio p {
+        color: var(--p-color);
+        line-height: 1.3;
+        font-size: 1.2rem;
+    }
+    .portfolio-grid .g-child {
+        margin: 1rem 0;
+    }
+    .portfolio-grid .g-child img {
+        width: 100%;
+    }
+    .portfolio-grid .g-child {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .portfolio {
+        text-align: center;
+        text-transform: capitalize;
+        background-color: var(--bg-section);
+        padding: 2rem 0;
+    }
+
+    .portfolio h1 {
+        color: var(--sub-head);
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .portfolio p {
+        color: var(--p-color);
+        line-height: 1.3;
+        font-size: 1.2rem;
+    }
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 1rem 0;
+    }
+    .portfolio-grid .g-child img {
+        width: 100%;
+    }
+    .portfolio-grid .g-child {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .portfolio {
+        text-align: center;
+        text-transform: capitalize;
+        background-color: var(--bg-section);
+        padding: 3rem 0;
+    }
+
+    .portfolio h1 {
+        color: var(--sub-head);
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .portfolio p {
+        color: var(--p-color);
+        line-height: 1.3;
+        font-size: 1.2rem;
+    }
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: 2rem 0 0 0;
+    }
+    .portfolio-grid .g-child img {
+        width: 100%;
+    }
+    .portfolio-grid .g-child {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .portfolio {
+        text-align: center;
+        text-transform: capitalize;
+        background-color: var(--bg-section);
+        padding: 5rem 0;
+    }
+
+    .portfolio h1 {
+        color: var(--sub-head);
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .portfolio p {
+        color: var(--p-color);
+        line-height: 1.3;
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        gap: 30px;
+        margin: 5rem 0 1rem 0 ;
+    }
+    .portfolio-grid .g-child img {
+        width: 100%;
+    }
+    .portfolio-grid .g-child {
+        cursor: pointer;
+    }
+}
+/* ==================================== End Portfolio Style ==================================== */
+
+
+
+/* ==================================== Start Footer Style ==================================== */
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+        color: #fff;
+        background-color: var(--footer-color);
+        padding: 3rem 0;
+    }
+
+    .footer-child .footer-contact h1 {
+        text-transform: uppercase;
+    }
+
+    .footer-child .footer-contact p {
+        color: var(--p-color);
+        line-height: 1.3;
+        margin: 1rem 0;
+        text-transform: capitalize;
+    }
+
+    .footer-child .footer-form input, textarea {
+        background-color: var(--Input-Contact-Color);
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+
+    .footer-child .footer-form input {
+        padding: 0.5rem;
+        width: 80%;
+        margin: 0.5rem 0;
+        padding-left: 1rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form textarea {
+        width: 80%;
+        margin-left: 3.1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form #submit {
+        width: 200px;
+        margin: 1.5rem auto;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        text-align: center;
+        color: #fff;
+        background-color: var(--footer-color);
+        padding: 3rem 0;
+    }
+
+    .footer-child .footer-contact h1 {
+        text-transform: uppercase;
+    }
+
+    .footer-child .footer-contact p {
+        color: var(--p-color);
+        line-height: 1.3;
+        margin: 1rem 0;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+    }
+
+    .footer-child .footer-form input, textarea {
+        background-color: var(--Input-Contact-Color);
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+
+    .footer-child .footer-form input {
+        padding: 0.5rem;
+        width: 80%;
+        margin: 0.5rem 0;
+        padding-left: 1rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form textarea {
+        width: 80%;
+        margin-left: 3.1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form #submit {
+        width: 200px;
+        margin: 1.5rem auto;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    footer {
+        text-align: center;
+        color: #fff;
+        background-color: var(--footer-color);
+        padding: 7rem 0;
+    }
+
+    .footer-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50p7;
+    }
+
+    .footer-child .footer-contact h1 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    .footer-child .footer-contact p {
+        color: var(--p-color);
+        line-height: 1.3;
+        margin: 1rem auto;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        width: 70%;
+    }
+
+    .footer-child .footer-form {
+        margin-top: 3.5rem;
+    }
+
+    .footer-child .footer-form input, textarea {
+        background-color: var(--Input-Contact-Color);
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+
+    .footer-child .footer-form input {
+        padding: 0.5rem;
+        width: 70%;
+        margin: 0.5rem 0;
+        padding-left: 1rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form textarea {
+        width: 70%;
+        margin-left: 3.1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        border-radius: 5px;
+    }
+
+    .footer-child .footer-form #submit {
+        width: 210px;
+        margin: 1.5rem auto;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        padding: 0.8rem;
+    }
+}
+/* ==================================== End Footer Style ==================================== */
+
+
+
+/* ==================================== Start Social Media Style ==================================== */
+
+.social-media {
+    background-color: var(--contact-Section-Color);
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--p-color);
+    text-transform: capitalize;
+}
+
+.social-media .container p {
+    font-size: 1.3rem;
+}
+
+.social-media-child span {
+    background-color: var(--p-color);
+    width: 40px;
+    height: 40px;
+    margin: 1rem 0.5rem;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 40px;
+    transition: all 0.50s ease-in-out;
+}
+
+.social-media-child span a {
+    color: var(--footer-color);
+}
+
+.social-media-child span:hover {
+    background-color: #fff;
+}
+
+/* ==================================== End Social Media Style ==================================== */
